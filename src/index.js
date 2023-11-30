@@ -4,8 +4,15 @@ import App from './App';
 // react和redux建立关联
 import { store } from "./redux/store"
 const root = ReactDOM.createRoot(document.getElementById('root'));
-// react和redux建立关联
 
-root.render(
-    <App store={store} />
-);
+function render(params) {
+    root.render(
+        <App store={store} />
+    );
+}
+render()
+
+
+// react和redux建立关联
+// subscribe 订阅，在仓库的状态发生改变的时候
+store.subscribe(render)
