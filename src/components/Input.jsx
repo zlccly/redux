@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { addListAciond } from '../redux/actions';
+// import { addListAciond } from '../redux/actions';
 
 function Input(props) {
     const [value, setValue] = useState("")
@@ -8,8 +8,8 @@ function Input(props) {
         // dispatch 方法会派发一个action对象到reducer里面
         // addListAciond(value) ===> {type: ADD, data: value}
         // 这个就是我们的action描述对象，该对象会被dispatch派发到reducer
-        props.store.dispatch(addListAciond(value))
-        setValue("")
+        // props.store.dispatch(addListAciond(value))
+        // setValue("")
 
     }
 
