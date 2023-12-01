@@ -42,9 +42,11 @@ export const todolistSlice = createSlice({
 
         },
         change: (state, { payload }) => {
+            console.log(payload, state.list[payload], "-----------")
             state.list[payload].status = !state.list[payload].status
         }
     }
 })
-console.log(todolistSlice, "todolistSlice切片");
+console.log(todolistSlice, todolistSlice.reducer, "todolistSlice切片");
+export const { add, del, change } = todolistSlice.actions
 export default todolistSlice.reducer
