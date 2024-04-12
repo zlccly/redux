@@ -29,7 +29,7 @@ let defaultState = {
 
 /**
  * 通过这个纯函数我们会计算出最新的状态
- * @param {*} state 仓库数据
+ * @param {*} state 仓库数据,每次回传入上一次的仓库数据
  * @param {*} action 描述对象{type: "ADD", data: '学习Redux'}
  * 描述对象描述了我要做什么，以及带来的额外数据
  */
